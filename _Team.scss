@@ -1,0 +1,176 @@
+.second-page {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+
+    @media (max-width: 576px) {
+        display: block;
+    }
+}
+
+
+.card-title {
+    color: #323264;
+    font-size: 18px;
+
+    @media (max-width: 786px) {
+        word-wrap: break-word;
+        
+    }
+}
+
+.card-text {
+   color:  #B3B3BA;
+   font-size: 16px;
+}
+
+.btn-open {
+    background: #F5F5FA;
+    border: none;
+    border-radius: 45%;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+}
+
+.card-body-container{
+    display: flex;
+    flex-direction: row;   
+}
+
+.card-ref {
+    margin-top: 23px;
+}
+
+.card {
+    border: none;
+    
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.gradient-text {
+   background:linear-gradient(#F0145A, #EF8080);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   margin: 80px auto;
+   max-width: 864px;   
+} 
+
+.team-container {
+    margin-bottom: 60px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 40px;
+    }
+}
+
+.footer-sect-team {
+    border-radius: 12px 12px 0 0;
+}
+
+
+@media (max-width:768px) {
+    .navbar-light {
+        margin: 0;
+    }
+
+    .gradient-text {
+        margin: 20px auto;
+    }
+}
+
+
+.foto-member-team {
+    display: flex;
+    justify-content: end;
+
+    img {
+
+        @media (max-width: 1022px) {
+            width: 100%;
+            height: 65%;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+            height: auto;
+        }
+  
+    }
+}
+
+.col-team-member-text {
+
+    padding-right: 130px;
+
+    @media (max-width: 1200px) {
+        padding-right: 50px;
+    }
+
+    @media (max-width: 992px) {
+        padding-right: 20px;
+    }
+
+    .team-member-first-text-block {
+
+        border-bottom: 4px solid #E6E6F0;
+        margin-bottom: 40px;
+    
+        
+
+        .member-info {
+            display: flex;
+            font-size: 16px;
+            gap: 26px;
+
+            @media (max-width: 767px) {
+                flex-direction: column;
+            }
+            
+            
+
+            a {
+                text-decoration: none;
+            }
+        
+            a:before {
+                content: url(../img/separator.png);
+                margin-right: 18px;
+
+                @media (max-width:992px) {
+                    display: none;
+                }
+            }
+
+            .position-team-member {
+                color: #B3B3BA;
+            }
+        }
+    }
+
+    .team-member-second-text-block {
+        font-size: 18px;
+        font-weight: 400;
+
+        .h3-team-member {
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #323264;
+        }
+    }
+
+
+    
+
+}
+
+.container-member-team {
+    margin-bottom: 80px;
+}
+
+.container {
+    flex-grow: 1;
+}
